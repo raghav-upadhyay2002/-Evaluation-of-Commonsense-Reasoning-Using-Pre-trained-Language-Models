@@ -18,3 +18,41 @@ The evaluation uses a subset of the PIQA validation dataset to measure the accur
   	•	Python 3.7 or higher
 	•	pip package manager
 ### Installation
+	1.	Clone the repository:
+    ```{bash}
+    git clone https://github.com/your-username/piqa-evaluation.git
+cd piqa-evaluation
+    ```
+    2.	Install the required Python libraries:
+    ```{bash}
+        pip install -r requirements.txt
+    ```
+    The requirements include:
+	•	transformers
+	•	datasets
+	•	torch
+	•	matplotlib (optional, for visualization)
+## Usage
+	1.	Run the Evaluation Script:
+Use the provided script to evaluate the models:
+```{bash}
+python evaluate_models.py
+```
+	2.	Customize Evaluation:
+	•	Modify the max_examples parameter in the code to evaluate on more examples.
+	•	Add other pre-trained models for comparison.
+## Results
+The results of the evaluation on 20 examples from the PIQA validation set are as follows:
+```{bash}
+| Model               | Accuracy (%) |
+|---------------------|--------------|
+| facebook/opt-1.3b   | 70.00        |
+| roberta-large-mnli  | 55.00        |
+
+```
+## Citations
+
+	•	PIQA Dataset: https://huggingface.co/datasets/piqa
+	•	Hugging Face Transformers: https://github.com/huggingface/transformers
+	•	Hugging Face Datasets: https://github.com/huggingface/datasets
+	•	Meta OPT Model: https://huggingface.co/facebook/opt-1.3b
