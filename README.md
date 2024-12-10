@@ -14,7 +14,7 @@ The evaluation uses a subset of the PIQA validation dataset to measure the accur
 	•	Comparison: Results highlight the strengths and weaknesses of each model.
 
 ## Setup
-    ### Prerequisites
+### Prerequisites
   	•	Python 3.7 or higher
 	•	pip package manager
-    ### Installation
+### Installation
